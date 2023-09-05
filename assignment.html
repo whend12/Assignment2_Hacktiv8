@@ -22,8 +22,8 @@
           <img src="img/hacktivlogo.png" alt="logo" class="logo" />
         </div>
         <div class="personal">
-          <h1>Wendy Gardiel</h1>
-          <p>Frontend Designer</p>
+          <h1 id="nama">Wendy Gardiel</h1>
+          <p id="role">Frontend Designer</p>
           <button
             type="button"
             class="kontak"
@@ -42,36 +42,36 @@
           <h5>Email</h5>
         </div>
         <div class="second">
-          <p>Fulltime</p>
-          <p>20</p>
-          <p>Jakarta</p>
-          <p>2</p>
-          <p>Wendygardiel@gmail.com</p>
+          <p id="Avaibility">Fulltime</p>
+          <p id="usia">20</p>
+          <p id="lokasi">Jakarta</p>
+          <p id="experience">2</p>
+          <p id="email">Wendygardiel@gmail.com</p>
         </div>
       </header>
-      <form class="form">
+      <form class="form" onsubmit="return Portofolio();">
         <label for="nama">Nama</label>
-        <input type="text" name="nama" id="nama" placeholder="Nama Anda" />
+        <input type="text" name="nama" id="inputnama" placeholder="Nama Anda" />
 
         <label for="role">Role</label>
-        <input type="text" name="role" id="role" placeholder="Role Anda" />
+        <input type="text" name="role" id="inputrole" placeholder="Role Anda" />
 
         <label for="avaibility">Avaibility</label>
         <input
           type="text"
           name="avaibility"
-          id="avaibility"
+          id="inputavaibility"
           placeholder="Avaibility Anda"
         />
 
         <label for="age">Age</label>
-        <input type="text" name="age" id="age" placeholder="Age Anda" />
+        <input type="text" name="age" id="inputusia" placeholder="Age Anda" />
 
         <label for="lokasi">Lokasi</label>
         <input
           type="text"
           name="lokasi"
-          id="lokasi"
+          id="inputlokasi"
           placeholder="Lokasi Anda"
         />
 
@@ -79,15 +79,22 @@
         <input
           type="text"
           name="yearsexperience"
-          id="yearsexperience"
+          id="inputyearsexperience"
           placeholder="Experience Anda"
         />
 
         <label for="email">Email</label>
-        <input type="text" name="email" id="email" placeholder="Email Anda" />
+        <input
+          type="text"
+          name="email"
+          id="inputemail"
+          placeholder="Email Anda"
+        />
 
-        <input type="submit" value="Submit" />
+        <button type="submit" value="Submit">Submit</button>
       </form>
     </section>
+
+    <script src="Assginment2.js"></script>
   </body>
 </html>

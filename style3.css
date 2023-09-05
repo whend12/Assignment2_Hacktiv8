@@ -1,4 +1,3 @@
-/* Default Styles (for screens wider than 900px) */
 :root {
   background-color: antiquewhite;
 }
@@ -128,7 +127,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* Media Query for Screens with a Maximum Width of 900px */
+/* for Screens with a Maximum Width of 900px */
 @media screen and (max-width: 900px) {
   .nav {
     padding-right: 0;
@@ -168,7 +167,7 @@ input[type="submit"] {
   }
 }
 
-/* Media Query for Screens with a Maximum Width of 768px */
+/* for Screens with a Maximum Width of 768px */
 @media screen and (max-width: 768px) {
   .nav {
     padding-right: 0;
@@ -179,7 +178,7 @@ input[type="submit"] {
   }
 
   .section {
-    padding: 50px 30px; /* Adjust padding for top and bottom */
+    padding: 50px 30px;
   }
 
   li {
@@ -188,21 +187,21 @@ input[type="submit"] {
   }
 
   .column {
-    grid-template-columns: 1fr 1fr; /* Use two columns for side-by-side layout */
+    grid-template-columns: 1fr 1fr;
     text-align: center;
     font-size: 15px;
   }
 
   .v1,
   .second {
-    text-align: center; /* Center the text in .v1 and .second */
-    font-size: 11px; /* Reduce font size */
-    margin: 2px; /* Adjust margin for spacing */
+    text-align: center;
+    font-size: 11px;
+    margin: 2px;
     line-height: 2.2;
   }
 
   .kontak,
   .resume {
-    margin: 10px auto; /* Center the buttons and add spacing between them */
+    margin: 10px auto;
   }
 }
