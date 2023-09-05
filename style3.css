@@ -1,0 +1,208 @@
+/* Default Styles (for screens wider than 900px) */
+:root {
+  background-color: antiquewhite;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  top: 0;
+  text-align: right;
+  padding-right: 150px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.logo {
+  border-radius: 50%;
+  background-color: #767272;
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  margin: 35px;
+}
+
+.personal {
+  margin-right: 100;
+}
+
+.column {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 3fr;
+  grid-auto-rows: minmax(150px, 300px);
+  padding-top: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  padding: 50px 150px 30px 50px;
+}
+
+.v1 {
+  border-left: 2px solid rgb(165, 163, 163);
+  height: 200px;
+  position: absolute;
+  margin-left: -10px;
+}
+
+.second {
+  line-height: 1.5;
+}
+
+.kontak {
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: blue;
+  border-radius: 8px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.resume {
+  padding: 10px;
+  color: green;
+  border-color: green;
+  cursor: pointer;
+}
+
+.form {
+  padding: 10px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media Query for Screens with a Maximum Width of 900px */
+@media screen and (max-width: 900px) {
+  .nav {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    margin: 20px auto;
+  }
+
+  .personal {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .column {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .v1 {
+    display: none;
+  }
+
+  .second {
+    text-align: center;
+  }
+
+  .kontak,
+  .resume {
+    margin: 10px auto;
+  }
+}
+
+/* Media Query for Screens with a Maximum Width of 768px */
+@media screen and (max-width: 768px) {
+  .nav {
+    padding-right: 0;
+  }
+  .logo {
+    height: 150px;
+    width: 150px;
+  }
+
+  .section {
+    padding: 50px 30px; /* Adjust padding for top and bottom */
+  }
+
+  li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .column {
+    grid-template-columns: 1fr 1fr; /* Use two columns for side-by-side layout */
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .v1,
+  .second {
+    text-align: center; /* Center the text in .v1 and .second */
+    font-size: 11px; /* Reduce font size */
+    margin: 2px; /* Adjust margin for spacing */
+    line-height: 2.2;
+  }
+
+  .kontak,
+  .resume {
+    margin: 10px auto; /* Center the buttons and add spacing between them */
+  }
+}
