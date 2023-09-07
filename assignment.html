@@ -17,21 +17,16 @@
       </ul>
     </nav>
     <section class="section">
-      <header class="column">
+      <header class="column" id="top">
         <div>
           <img src="img/hacktivlogo.png" alt="logo" class="logo" />
         </div>
         <div class="personal">
           <h1 id="nama">Wendy Gardiel</h1>
           <p id="role">Frontend Designer</p>
-          <button
-            type="button"
-            class="kontak"
-            href="https://wa.me/6281296262351"
-          >
-            Kontak
-          </button>
-          <button type="button" class="resume" href>Resume</button>
+          <a id="editButton" type="button" class="edit" href="#"> Edit </a>
+
+          <a type="button" class="resume" href>Resume</a>
         </div>
         <div>
           <p class="v1"></p>
@@ -49,64 +44,43 @@
           <p id="email">Wendygardiel@gmail.com</p>
         </div>
       </header>
-      <form class="form" onsubmit="return Portofolio();">
-        <label for="nama">Nama</label>
-        <input
-          type="text"
-          required="true"
-          name="nama"
-          id="inputnama"
-          placeholder="Nama Anda"
-        />
+      <form class="form" id="form" onsubmit="return Portofolio();">
+        <label for="inputnama">Nama</label>
+        <input type="text" name="nama" id="inputnama" placeholder="Nama Anda" />
 
-        <label for="role">Role</label>
-        <input
-          type="text"
-          required="true"
-          name="role"
-          id="inputrole"
-          placeholder="Role Anda"
-        />
+        <label for="inputrole">Role</label>
+        <input type="text" name="role" id="inputrole" placeholder="Role Anda" />
 
-        <label for="avaibility">Avaibility</label>
+        <label for="inputavaibility">Avaibility</label>
         <input
-          required="true"
           type="text"
           name="avaibility"
           id="inputavaibility"
           placeholder="Avaibility Anda"
+          default
         />
 
-        <label for="age">Age</label>
-        <input
-          type="text"
-          required="true"
-          name="age"
-          id="inputusia"
-          placeholder="Age Anda"
-        />
+        <label for="inputusia">Age</label>
+        <input type="text" name="age" id="inputusia" placeholder="Age Anda" />
 
-        <label for="lokasi">Lokasi</label>
+        <label for="inputlokasi">Lokasi</label>
         <input
-          required="true"
           type="text"
           name="lokasi"
           id="inputlokasi"
           placeholder="Lokasi Anda"
         />
 
-        <label for="yearsexperience">Years Experience</label>
+        <label for="inputyearsexperience">Years Experience</label>
         <input
-          required="true"
           type="text"
           name="yearsexperience"
           id="inputyearsexperience"
           placeholder="Experience Anda"
         />
 
-        <label for="email">Email</label>
+        <label for="inputemail">Email</label>
         <input
-          required="true"
           type="text"
           name="email"
           id="inputemail"

@@ -79,14 +79,15 @@ li a {
   line-height: 1.5;
 }
 
-.kontak {
+.edit {
   padding: 10px 15px;
   margin-right: 10px;
   background-color: blue;
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .resume {
@@ -94,6 +95,8 @@ li a {
   color: green;
   border-color: green;
   cursor: pointer;
+  text-decoration: none;
+  border: 2px solid green; /* Tambahkan garis pinggiran */
 }
 
 .form {
